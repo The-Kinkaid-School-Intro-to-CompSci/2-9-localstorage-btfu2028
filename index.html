@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISS and Your Location</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-    <h1>ISS and Your Location</h1>
-    <div class="center">
-        <img id="logo" src="images/logo1.png" alt="Space City Houston logo"/>
-        <select id="logo-selector">
-            <option value="logo1.png">Logo 1</option>
-            <option value="logo2.png">Logo 2</option>
-            <option value="logo3.png">Logo 3</option>
-        </select>
-        <label for="red">Red</label>
-        <input type="range" name="red" id="red" min=0 max=255>
-        <label for="green">Green</label>
-        <input type="range" name="green" id="green" min=0 max=255>
-        <label for="blue">Blue</label>
-        <input type="range" name="blue" id="blue" min=0 max=255>
-    </div>
-    <div>
-        <h2><span id="userName">{User's name goes here}</span>'s Location</h2>
-        <p id="actual-location">Loading...</p>
-    </div>
-    <!-- Uncomment the parts below for part 2 -->
-    <!-- <div>
-        <h2>ISS Location</h2>
-        <p id="iss-location">Loading...</p>
-    </div>
-    <div>
-        <h2>People in Space</h2>
-        <p id="num-people-in-space"></p>
-        <ul id="people-in-space"></ul>
-    </div> -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Purdue Tennis Players</title> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+           
 
-    <button id="clear-local-storage">Clear Local Storage</button>
-</body>
+            <h1 class="center">Players on the Purdue women's tennis team</h1>
+            
+            <section class="center">
+                <!-- <form> -->
+                <div>
+                
+        
+                    <button id="fetchPlayers">Fetch roster</button>
+                </div>
+                <!-- </form> -->
+                
+                <h4 >Player Data</h4>
+            </section>
+        
+            <section class="center">
+                
+                
+            </section>
+            <section class="cards" id="playerCardsContainer">
+                
+            </section>       
+
+            <!-- End part 2 -->
+        </main>
+       
+    </body>
 </html>
